@@ -2628,7 +2628,7 @@ hr.star-primary:after {
   display: block;
   position: absolute;
   font-size: 3em;
-  left: 49%;
+  left: 48%;
   -webkit-transform: translateY(-55%);
       -ms-transform: translateY(-55%);
           transform: translateY(-55%); }
