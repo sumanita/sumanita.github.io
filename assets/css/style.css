@@ -2600,7 +2600,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #19a78b;
+  color: #169279;
   outline: none; }
 
 h1,
@@ -2637,7 +2637,7 @@ hr.star-light {
   border-color: white; }
 
 hr.star-light:after {
-  background-color: #19a78b;
+  background-color: #169279;
   color: white; }
 
 hr.star-primary {
@@ -2652,7 +2652,7 @@ hr.star-primary:after {
 
 header {
   text-align: center;
-  background: #19a78b;
+  background: #169279;
   color: white; }
 
 header .container {
@@ -2723,7 +2723,7 @@ section h2 {
   font-size: 3em; }
 
 section.success {
-  background: #19a78b;
+  background: #169279;
   color: white; }
 
 section.success a,
@@ -2799,7 +2799,7 @@ section.success a.active {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #19a78b;
+  color: #169279;
   background: white;
   border: solid 2px white; }
 
@@ -2846,7 +2846,7 @@ section.success a.active {
   opacity: 1; }
 
 .floating-label-form-group-with-focus label {
-  color: #19a78b; }
+  color: #169279; }
 
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee; }
@@ -3003,7 +3003,7 @@ footer .footer-below {
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
   .navbar-default .navbar-brand:hover,
   .navbar-default .navbar-brand:focus {
-    color: #19a78b;
+    color: #169279;
     background-color: transparent; }
 
 .navbar-default .navbar-nav > .active > a,
