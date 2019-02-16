@@ -3028,3 +3028,13 @@ footer .footer-below {
 
 .scroll-to-top {
   color: #18bc9c; }
+
+.alert-danger {
+  background-color: D8000C;
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 24px; }
+  .alert-danger .close {
+    color: #000;
+    margin-right: 12px; }
