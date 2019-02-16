@@ -278,6 +278,8 @@ footer .footer-above {
 
 footer .footer-col {
   margin-bottom: 50px; }
+  footer .footer-col a {
+    color: #fff; }
 
 footer .footer-below {
   padding: 25px 0;
