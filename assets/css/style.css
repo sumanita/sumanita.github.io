@@ -3016,8 +3016,15 @@ footer .footer-below {
 .list-inline .linkedin svg {
   height: 22px; }
 
+.list-inline li span {
+  position: absolute;
+  text-indent: -9999px; }
+
 .text-danger ul {
   padding-left: inherit;
   list-style: none;
   font-size: 0.9em;
   color: #D8000C; }
+
+.scroll-to-top {
+  color: #128f76; }

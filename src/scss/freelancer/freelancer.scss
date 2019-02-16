@@ -453,6 +453,13 @@ footer .footer-below {
   .linkedin svg {
     height: 22px;
   }
+
+  li {
+    span {
+      position: absolute; 
+      text-indent: -9999px; 
+    }
+  }
 }
 
 .text-danger ul {
@@ -460,4 +467,8 @@ footer .footer-below {
   list-style: none;
   font-size: 0.9em;
   color: #D8000C;
+}
+
+.scroll-to-top {
+  color: #128f76;
 }
