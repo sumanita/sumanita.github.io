@@ -396,12 +396,12 @@ footer .footer-below {
   line-height: 1.3333333;
   border-radius: 6px;
   color: #ffffff;
-  background-color: #18bc9c;
-  border-color: #18bc9c; }
+  background-color: #2c3e50;
+  border-color: #2c3e50; }
   .btn:hover, .btn:focus {
     color: #ffffff;
-    background-color: #128f76;
-    border-color: #11866f; }
+    background-color: #1a242f;
+    border-color: #1a242f; }
 
 .logo {
   max-width: 184px; }
