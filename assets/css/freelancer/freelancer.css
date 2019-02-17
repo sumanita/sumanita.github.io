@@ -44,9 +44,7 @@ hr.star-primary:after {
   position: absolute;
   font-size: 3em;
   left: 48%;
-  -webkit-transform: translateY(-55%);
-      -ms-transform: translateY(-55%);
-          transform: translateY(-55%); }
+  transform: translateY(-55%); }
 
 hr.star-light {
   border-color: white; }
@@ -101,11 +99,9 @@ header .intro-text .skills {
 @media (min-width: 768px) {
   .navbar-fixed-top {
     padding: 25px 0;
-    -webkit-transition: padding 0.3s;
     transition: padding 0.3s; }
   .navbar-fixed-top .navbar-brand {
     font-size: 2em;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s; }
   .navbar-fixed-top.navbar-shrink {
     padding: 10px 0; }
@@ -207,7 +203,6 @@ section.success a.active {
   font-size: 20px;
   border: solid 2px white;
   background: transparent;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
 .btn-outline:hover,
@@ -234,8 +229,7 @@ section.success a.active {
   border-radius: 0;
   font-size: 1.5em;
   background: none;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   resize: none; }
 
 .floating-label-form-group label {
@@ -249,7 +243,6 @@ section.success a.active {
   vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
-  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
   transition: top 0.3s ease,opacity 0.3s ease; }
 
 .floating-label-form-group:not(:first-child) {
@@ -321,7 +314,6 @@ footer .footer-below {
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
-  -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
   min-height: 100%;
@@ -430,10 +422,6 @@ footer .footer-below {
 .list-inline .linkedin svg {
   height: 22px; }
 
-.list-inline li span {
-  position: absolute;
-  text-indent: -9999px; }
-
 .text-danger ul {
   padding-left: inherit;
   list-style: none;
@@ -454,19 +442,14 @@ footer .footer-below {
     margin-right: 12px; }
 
 .logo {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   height: 164px;
   width: 164px;
   border-radius: 50%;
