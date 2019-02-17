@@ -2988,6 +2988,8 @@ footer .footer-below {
 
 .scroll-to-top {
   color: #18bc9c; }
+  .scroll-to-top:hover, .scroll-to-top:focus {
+    color: #18bc9c; }
 
 .alert-danger {
   background-color: #D8000C;
