@@ -2793,7 +2793,7 @@ section.success a.active {
     .contact-container .location__town svg {
       width: 24px;
       background-color: #fff;
-      padding: 4px;
+      padding: 3px 4px;
       border-radius: 2px;
       margin-right: 6px; }
   @media (max-width: 992px) {
