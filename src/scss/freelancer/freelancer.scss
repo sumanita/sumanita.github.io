@@ -243,13 +243,16 @@ section.success a.active {
     text-transform: inherit;
     margin-bottom: 18px; 
   }
+  a {
+    color: #fff;
+  }
   .location__town {
     display: flex; 
     align-items: center; 
     svg {
       width: 24px; 
       background-color: #fff;
-      padding: 4px; 
+      padding: 3px 4px; 
       border-radius: 2px;
       margin-right: 6px;
     }
