@@ -225,15 +225,17 @@ section.success a.active {
   .contact-container h3 {
     text-transform: inherit;
     margin-bottom: 18px; }
-  .contact-container .location__town {
+  .contact-container a {
+    color: #fff; }
+  .contact-container .icon-info {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center; }
-    .contact-container .location__town svg {
+    .contact-container .icon-info svg {
       width: 24px;
       background-color: #fff;
-      padding: 4px;
+      padding: 3px 4px;
       border-radius: 2px;
       margin-right: 6px; }
   @media (max-width: 992px) {
