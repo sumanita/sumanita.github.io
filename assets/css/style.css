@@ -2785,12 +2785,12 @@ section.success a.active {
     margin-bottom: 18px; }
   .contact-container a {
     color: #fff; }
-  .contact-container .location__town {
+  .contact-container .icon-info {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center; }
-    .contact-container .location__town svg {
+    .contact-container .icon-info svg {
       width: 24px;
       background-color: #fff;
       padding: 3px 4px;
