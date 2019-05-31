@@ -2791,7 +2791,6 @@ section.success a.active {
     -ms-flex-align: center;
         align-items: center; }
     .contact-container .icon-info svg {
-      width: 26px;
       background-color: #fff;
       padding: 3px 4px;
       border-radius: 2px;
