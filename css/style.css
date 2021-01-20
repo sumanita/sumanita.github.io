@@ -1917,8 +1917,8 @@ nav {
   stroke-dashoffset: 175;
   -webkit-animation: dash 1s linear forwards;
           animation: dash 1s linear forwards;
-  -webkit-transition: stroke 0.3s ease-out;
-  transition: stroke 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 @-webkit-keyframes dash {
