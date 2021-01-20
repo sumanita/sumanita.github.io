@@ -1820,6 +1820,7 @@ nav {
 
 /* line 48, src/sass/components/_header.scss */
 .nav__logo {
+  display: inline-block;
   background-color: #fff;
   border-radius: 50%;
   width: 74px;
