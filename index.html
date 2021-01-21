@@ -33,14 +33,14 @@
 
 <body id="top-page">
 	<div class="skipnav"><a href="#maincontent">Skip to main content</a></div>
-	<header class="header" id="top-page">
+	<header class="header" id="top-page" data-scroll-header>
 		<nav>
 			<div class="container">
 				<div class="row">
 					<div class="col">
 						<div class="nav">
 							<a class="nav__logo" href="#top-page">
-								<span class="sr-only">Suman Shrestha - Front end developer - Reading, UK</span>
+								<span class="sr-only">Front end developer - Suman Shrestha</span>
 								<svg xmlns="http://www.w3.org/2000/svg">
 									<path class="path" d="M50.766 24.264S50.621 5.338 31.55 10.579 15.827 28.34 25.581 34.018s20.236 12.811 23 22.274S45.234 84.826 33.3 83.661-3.1 74.344.541 60.8" fill="none" stroke="#2c3e50" stroke-width="10"/></svg>
 							</a>
@@ -218,7 +218,9 @@
 	</footer>
 	<script src="js/main.polyfills.min.js"></script>
 	<script>
-		var scroll = new SmoothScroll('a[href*="#"]');
+		var scroll = new SmoothScroll('a[href*="#"]', {
+			header: '[data-scroll-header]'
+		});
 	</script>
 </body>
 
