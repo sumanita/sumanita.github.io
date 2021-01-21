@@ -43,7 +43,7 @@ document.addEventListener('click', (function (event) {
 	  }  
 	 
 	  let observer = new IntersectionObserver(handler);
-	  observer.observe(document.querySelector('.portfolio'));
+	  observer.observe(document.querySelector('.bio-section'));
 })()
 
 
