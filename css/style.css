@@ -1922,7 +1922,12 @@ nav {
   }
 }
 
-/* line 118, src/sass/components/_header.scss */
+/* line 120, src/sass/components/_header.scss */
+body:not(.is-fixed) .is-active a {
+  background-color: transparent;
+}
+
+/* line 126, src/sass/components/_header.scss */
 .path {
   stroke-dasharray: 175;
   stroke-dashoffset: 175;
@@ -1950,12 +1955,12 @@ nav {
   }
 }
 
-/* line 134, src/sass/components/_header.scss */
+/* line 142, src/sass/components/_header.scss */
 .info-panel {
   text-align: center;
 }
 
-/* line 138, src/sass/components/_header.scss */
+/* line 146, src/sass/components/_header.scss */
 .logo-personal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1977,19 +1982,19 @@ nav {
   background-color: #fff;
 }
 
-/* line 149, src/sass/components/_header.scss */
+/* line 157, src/sass/components/_header.scss */
 .logo-personal span {
   font-family: 'Montserrat';
   font-size: 52px;
   color: #13846D;
 }
 
-/* line 155, src/sass/components/_header.scss */
+/* line 163, src/sass/components/_header.scss */
 .logo-personal + .bio {
   margin-top: 24px;
 }
 
-/* line 161, src/sass/components/_header.scss */
+/* line 169, src/sass/components/_header.scss */
 .bio__name {
   color: #fff;
   text-transform: uppercase;
@@ -2000,14 +2005,14 @@ nav {
 }
 
 @media (min-width: 992px) {
-  /* line 161, src/sass/components/_header.scss */
+  /* line 169, src/sass/components/_header.scss */
   .bio__name {
     font-size: 72px;
     font-size: 4.5rem;
   }
 }
 
-/* line 173, src/sass/components/_header.scss */
+/* line 181, src/sass/components/_header.scss */
 .bio__title {
   color: #fff;
   font-size: 18px;
@@ -2015,14 +2020,14 @@ nav {
 }
 
 @media (min-width: 992px) {
-  /* line 173, src/sass/components/_header.scss */
+  /* line 181, src/sass/components/_header.scss */
   .bio__title {
     font-size: 24px;
     font-size: 1.5rem;
   }
 }
 
-/* line 183, src/sass/components/_header.scss */
+/* line 191, src/sass/components/_header.scss */
 .star {
   border: none;
   position: relative;
@@ -2032,13 +2037,13 @@ nav {
 }
 
 @media (min-width: 768px) {
-  /* line 183, src/sass/components/_header.scss */
+  /* line 191, src/sass/components/_header.scss */
   .star {
     max-width: 22vw;
   }
 }
 
-/* line 194, src/sass/components/_header.scss */
+/* line 202, src/sass/components/_header.scss */
 .star::before {
   content: '';
   position: absolute;
@@ -2047,7 +2052,7 @@ nav {
   height: 5px;
 }
 
-/* line 202, src/sass/components/_header.scss */
+/* line 210, src/sass/components/_header.scss */
 .star::after {
   content: '\2605';
   position: absolute;
@@ -2060,41 +2065,41 @@ nav {
   font-size: 2.25rem;
 }
 
-/* line 214, src/sass/components/_header.scss */
+/* line 222, src/sass/components/_header.scss */
 .star--light::before {
   background-color: #fff;
 }
 
-/* line 218, src/sass/components/_header.scss */
+/* line 226, src/sass/components/_header.scss */
 .star--light::after {
   color: #fff;
   background-color: #13846D;
 }
 
-/* line 226, src/sass/components/_header.scss */
+/* line 234, src/sass/components/_header.scss */
 .star--dark::before {
   background-color: #2c3e50;
 }
 
-/* line 230, src/sass/components/_header.scss */
+/* line 238, src/sass/components/_header.scss */
 .star--dark::after {
   color: #2c3e50;
   background-color: #fff;
 }
 
-/* line 237, src/sass/components/_header.scss */
+/* line 245, src/sass/components/_header.scss */
 .bio-section {
   background-color: #13846D;
   margin-top: 92px;
 }
 
-/* line 242, src/sass/components/_header.scss */
+/* line 250, src/sass/components/_header.scss */
 .footer {
   padding: 24px 0;
   background-color: #233140;
 }
 
-/* line 246, src/sass/components/_header.scss */
+/* line 254, src/sass/components/_header.scss */
 .footer * {
   color: #fff;
 }
