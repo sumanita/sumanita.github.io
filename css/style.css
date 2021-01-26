@@ -1741,15 +1741,15 @@ small {
 
 /* line 51, src/sass/base/_elements.scss */
 section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 992px) {
   /* line 51, src/sass/base/_elements.scss */
   section {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
