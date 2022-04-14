@@ -1741,14 +1741,16 @@ small,
 }
 
 /* line 52, src/sass/base/_elements.scss */
-section {
+section,
+.section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media (min-width: 992px) {
   /* line 52, src/sass/base/_elements.scss */
-  section {
+  section,
+  .section {
     padding-top: 90px;
     padding-bottom: 90px;
   }
@@ -1756,11 +1758,11 @@ section {
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  /* line 64, src/sass/base/_elements.scss */
+  /* line 65, src/sass/base/_elements.scss */
   html:focus-within {
     scroll-behavior: auto;
   }
-  /* line 68, src/sass/base/_elements.scss */
+  /* line 69, src/sass/base/_elements.scss */
   *,
   *::before,
   *::after {
