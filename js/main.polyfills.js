@@ -1,82 +1,42 @@
 /*!
  * project-name v0.0.1
  * A description for your project.
- * (c) 2021 YOUR NAME
+ * (c) 2022 YOUR NAME
  * MIT License
  * http://link-to-your-git-repo.com
  */
 
-// Listen for all clicks on the document
-document.addEventListener('click', (function (event) {
 
-	// Bail if it's not a .nav-link
-	if (!event.target.classList.contains('nav__link')) return;
+    const sections = document.querySelectorAll('.screen');
+    const config = {
+        rootMargin: '-50px 0px -46%'
+    };
 
-	// Add the active class
-	event.target.classList.add('is-active');
+    let observer = new IntersectionObserver(function (entries, self) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                intersectionHandler(entry);
+            }
+        });
+    }, config);
 
-	// Get all nav links
-	var links = document.querySelectorAll('.nav__link');
+    sections.forEach(section => {
+        observer.observe(section);        
+    });
 
-	// Loop through each link
-	for (var i = 0; i < links.length; i++) {
+    function intersectionHandler(entry) {
+        const id = entry.target.id;
+        const currentlyActive = document.querySelector('.nav__list li.is-active');
+        const shouldBeActive = document.querySelector('.nav__list li[data-ref=' + id + ']');
 
-		// If the link is the one clicked, skip it
-		if (links[i] === event.target) continue;
+        if (currentlyActive) {
+            currentlyActive.classList.remove('is-active');
+        }
 
-		// Remove the .active class
-		links[i].classList.remove('is-active');
-
-	}
-
-}), false);
-
-(function (){
-	function handler(entries, observer) {
-		for (entry of entries) {
-		  if (!entry.isIntersecting) {
-			document.body.classList.add('is-fixed');
-		  } else {
-			document.body.classList.remove('is-fixed');
-		  }
-		}
-	  }  
-	 
-	  let observer = new IntersectionObserver(handler);
-	  observer.observe(document.querySelector('.bio-section'));
-})()
-
-
-const sections = document.querySelectorAll('.screen');
-const config = {
-	rootMargin: '-50px 0px -46%'
-};
-
-let observer = new IntersectionObserver(function (entries, self) {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			intersectionHandler(entry);
-		}
-	});
-}, config);
-
-sections.forEach(section => {
-	observer.observe(section);        
-});
-
-function intersectionHandler(entry) {
-	const id = entry.target.id;
-	const currentlyActive = document.querySelector('.nav__list li.is-active');
-	const shouldBeActive = document.querySelector('.nav__list li[data-ref=' + id + ']');
-
-	if (currentlyActive) {
-		currentlyActive.classList.remove('is-active');
-	}
-
-	if (shouldBeActive) {
-		shouldBeActive.classList.add('is-active');
-	}
-}
+        if (shouldBeActive) {
+            shouldBeActive.classList.add('is-active');
+        }
+    }
 
 /*! SmoothScroll v16.1.4 | (c) 2020 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
 (function (global, factory) {

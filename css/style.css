@@ -1,7 +1,7 @@
 /*!
  * project-name v0.0.1
  * A description for your project.
- * (c) 2021 YOUR NAME
+ * (c) 2022 YOUR NAME
  * MIT License
  * http://link-to-your-git-repo.com
  */
@@ -1741,61 +1741,61 @@ small {
 
 /* line 51, src/sass/base/_elements.scss */
 section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media (min-width: 992px) {
   /* line 51, src/sass/base/_elements.scss */
   section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  /* line 63, src/sass/base/_elements.scss */
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  /* line 67, src/sass/base/_elements.scss */
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
 /* line 1, src/sass/components/_header.scss */
 .header {
   position: -webkit-sticky;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 9999;
 }
 
-/* line 10, src/sass/components/_header.scss */
+/* line 8, src/sass/components/_header.scss */
 nav {
   padding: 9px 0;
   background-color: #2c3e50;
 }
 
-/* line 16, src/sass/components/_header.scss */
-.is-fixed .nav__logo {
-  height: 58px;
-  width: 58px;
-}
-
-/* line 19, src/sass/components/_header.scss */
-.is-fixed .nav__logo svg {
-  height: 58px;
-  width: 43px;
-}
-
-/* line 23, src/sass/components/_header.scss */
-.is-fixed .nav__logo .path {
-  -webkit-transform: scale(0.65);
-          transform: scale(0.65);
-}
-
 @media (max-width: 767.98px) {
-  /* line 29, src/sass/components/_header.scss */
+  /* line 13, src/sass/components/_header.scss */
   .nav {
     text-align: center;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 29, src/sass/components/_header.scss */
+  /* line 13, src/sass/components/_header.scss */
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1809,60 +1809,52 @@ nav {
   }
 }
 
-/* line 41, src/sass/components/_header.scss */
+/* line 25, src/sass/components/_header.scss */
 .nav a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 44, src/sass/components/_header.scss */
+/* line 28, src/sass/components/_header.scss */
 .nav a:hover, .nav a:focus {
   color: #12d5af;
 }
 
-/* line 50, src/sass/components/_header.scss */
+/* line 34, src/sass/components/_header.scss */
 .nav__logo {
   background-color: #fff;
   border-radius: 50%;
-  width: 74px;
-  height: 74px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  width: 72px;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
-/* line 60, src/sass/components/_header.scss */
+/* line 44, src/sass/components/_header.scss */
 .nav__logo svg {
   width: 58px;
   height: 72px;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
-/* line 65, src/sass/components/_header.scss */
-.nav__logo svg .path {
+/* line 48, src/sass/components/_header.scss */
+.nav__logo svg path {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
-/* line 72, src/sass/components/_header.scss */
+/* line 54, src/sass/components/_header.scss */
 .nav__logo:hover .path {
   stroke: #13846D;
 }
 
-/* line 78, src/sass/components/_header.scss */
+/* line 60, src/sass/components/_header.scss */
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1873,13 +1865,13 @@ nav {
 }
 
 @media (max-width: 767.98px) {
-  /* line 78, src/sass/components/_header.scss */
+  /* line 60, src/sass/components/_header.scss */
   .nav__list {
     margin-top: 12px;
   }
 }
 
-/* line 86, src/sass/components/_header.scss */
+/* line 68, src/sass/components/_header.scss */
 .nav__list li {
   font-family: 'Montserrat';
   font-size: 12px;
@@ -1887,54 +1879,40 @@ nav {
 }
 
 @media (min-width: 992px) {
-  /* line 86, src/sass/components/_header.scss */
+  /* line 68, src/sass/components/_header.scss */
   .nav__list li {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
 
-/* line 94, src/sass/components/_header.scss */
+/* line 76, src/sass/components/_header.scss */
 .nav__list li a {
   padding: 10px;
   text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
-  /* line 94, src/sass/components/_header.scss */
+  /* line 76, src/sass/components/_header.scss */
   .nav__list li a {
     padding: 10px 15px;
   }
 }
 
-/* line 103, src/sass/components/_header.scss */
+/* line 85, src/sass/components/_header.scss */
 .nav__list li.is-active a {
   background-color: #13846D;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-radius: 3px;
 }
 
-@media (min-width: 768px) {
-  /* line 103, src/sass/components/_header.scss */
-  .nav__list li.is-active a {
-    padding: 10px 15px;
-    border-radius: 3px;
-  }
-}
-
-/* line 120, src/sass/components/_header.scss */
-body:not(.is-fixed) .is-active a {
-  background-color: transparent;
-}
-
-/* line 126, src/sass/components/_header.scss */
+/* line 94, src/sass/components/_header.scss */
 .path {
   stroke-dasharray: 175;
   stroke-dashoffset: 175;
   -webkit-animation: dash 1s linear forwards;
           animation: dash 1s linear forwards;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: stroke 0.3s ease-out;
+  transition: stroke 0.3s ease-out;
 }
 
 @-webkit-keyframes dash {
@@ -1955,12 +1933,12 @@ body:not(.is-fixed) .is-active a {
   }
 }
 
-/* line 142, src/sass/components/_header.scss */
+/* line 110, src/sass/components/_header.scss */
 .info-panel {
   text-align: center;
 }
 
-/* line 146, src/sass/components/_header.scss */
+/* line 114, src/sass/components/_header.scss */
 .logo-personal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1982,19 +1960,19 @@ body:not(.is-fixed) .is-active a {
   background-color: #fff;
 }
 
-/* line 157, src/sass/components/_header.scss */
+/* line 125, src/sass/components/_header.scss */
 .logo-personal span {
   font-family: 'Montserrat';
   font-size: 52px;
   color: #13846D;
 }
 
-/* line 163, src/sass/components/_header.scss */
+/* line 131, src/sass/components/_header.scss */
 .logo-personal + .bio {
   margin-top: 24px;
 }
 
-/* line 169, src/sass/components/_header.scss */
+/* line 137, src/sass/components/_header.scss */
 .bio__name {
   color: #fff;
   text-transform: uppercase;
@@ -2005,14 +1983,14 @@ body:not(.is-fixed) .is-active a {
 }
 
 @media (min-width: 992px) {
-  /* line 169, src/sass/components/_header.scss */
+  /* line 137, src/sass/components/_header.scss */
   .bio__name {
     font-size: 72px;
     font-size: 4.5rem;
   }
 }
 
-/* line 181, src/sass/components/_header.scss */
+/* line 149, src/sass/components/_header.scss */
 .bio__title {
   color: #fff;
   font-size: 18px;
@@ -2020,14 +1998,14 @@ body:not(.is-fixed) .is-active a {
 }
 
 @media (min-width: 992px) {
-  /* line 181, src/sass/components/_header.scss */
+  /* line 149, src/sass/components/_header.scss */
   .bio__title {
     font-size: 24px;
     font-size: 1.5rem;
   }
 }
 
-/* line 191, src/sass/components/_header.scss */
+/* line 159, src/sass/components/_header.scss */
 .star {
   border: none;
   position: relative;
@@ -2037,13 +2015,13 @@ body:not(.is-fixed) .is-active a {
 }
 
 @media (min-width: 768px) {
-  /* line 191, src/sass/components/_header.scss */
+  /* line 159, src/sass/components/_header.scss */
   .star {
     max-width: 22vw;
   }
 }
 
-/* line 202, src/sass/components/_header.scss */
+/* line 170, src/sass/components/_header.scss */
 .star::before {
   content: '';
   position: absolute;
@@ -2052,7 +2030,7 @@ body:not(.is-fixed) .is-active a {
   height: 5px;
 }
 
-/* line 210, src/sass/components/_header.scss */
+/* line 178, src/sass/components/_header.scss */
 .star::after {
   content: '\2605';
   position: absolute;
@@ -2065,41 +2043,40 @@ body:not(.is-fixed) .is-active a {
   font-size: 2.25rem;
 }
 
-/* line 222, src/sass/components/_header.scss */
+/* line 190, src/sass/components/_header.scss */
 .star--light::before {
   background-color: #fff;
 }
 
-/* line 226, src/sass/components/_header.scss */
+/* line 194, src/sass/components/_header.scss */
 .star--light::after {
   color: #fff;
   background-color: #13846D;
 }
 
-/* line 234, src/sass/components/_header.scss */
+/* line 202, src/sass/components/_header.scss */
 .star--dark::before {
   background-color: #2c3e50;
 }
 
-/* line 238, src/sass/components/_header.scss */
+/* line 206, src/sass/components/_header.scss */
 .star--dark::after {
   color: #2c3e50;
   background-color: #fff;
 }
 
-/* line 245, src/sass/components/_header.scss */
+/* line 213, src/sass/components/_header.scss */
 .bio-section {
   background-color: #13846D;
-  margin-top: 92px;
 }
 
-/* line 250, src/sass/components/_header.scss */
+/* line 217, src/sass/components/_header.scss */
 .footer {
   padding: 24px 0;
   background-color: #233140;
 }
 
-/* line 254, src/sass/components/_header.scss */
+/* line 221, src/sass/components/_header.scss */
 .footer * {
   color: #fff;
 }
