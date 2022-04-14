@@ -1734,19 +1734,20 @@ h3 {
 }
 
 /* line 47, src/sass/base/_elements.scss */
-small {
+small,
+.small {
   font-size: 14px;
   font-size: 0.875rem;
 }
 
-/* line 51, src/sass/base/_elements.scss */
+/* line 52, src/sass/base/_elements.scss */
 section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media (min-width: 992px) {
-  /* line 51, src/sass/base/_elements.scss */
+  /* line 52, src/sass/base/_elements.scss */
   section {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -1755,11 +1756,11 @@ section {
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  /* line 63, src/sass/base/_elements.scss */
+  /* line 64, src/sass/base/_elements.scss */
   html:focus-within {
     scroll-behavior: auto;
   }
-  /* line 67, src/sass/base/_elements.scss */
+  /* line 68, src/sass/base/_elements.scss */
   *,
   *::before,
   *::after {
@@ -1817,7 +1818,7 @@ nav {
 
 /* line 28, src/sass/components/_header.scss */
 .nav a:hover, .nav a:focus {
-  color: #12d5af;
+  text-decoration: underline;
 }
 
 /* line 34, src/sass/components/_header.scss */
