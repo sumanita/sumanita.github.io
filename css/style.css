@@ -1791,7 +1791,14 @@ nav {
 }
 
 @media (max-width: 767.98px) {
-  /* line 13, src/sass/components/_header.scss */
+  /* line 8, src/sass/components/_header.scss */
+  nav {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 17, src/sass/components/_header.scss */
   .nav {
     text-align: center;
     display: -webkit-box;
@@ -1808,7 +1815,7 @@ nav {
 }
 
 @media (min-width: 768px) {
-  /* line 13, src/sass/components/_header.scss */
+  /* line 17, src/sass/components/_header.scss */
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1822,18 +1829,18 @@ nav {
   }
 }
 
-/* line 28, src/sass/components/_header.scss */
+/* line 32, src/sass/components/_header.scss */
 .nav a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 31, src/sass/components/_header.scss */
+/* line 35, src/sass/components/_header.scss */
 .nav a:hover, .nav a:focus {
   text-decoration: underline;
 }
 
-/* line 37, src/sass/components/_header.scss */
+/* line 41, src/sass/components/_header.scss */
 .nav__logo {
   background-color: #fff;
   border-radius: 50%;
@@ -1850,24 +1857,24 @@ nav {
           justify-content: center;
 }
 
-/* line 47, src/sass/components/_header.scss */
+/* line 51, src/sass/components/_header.scss */
 .nav__logo svg {
   width: 58px;
   height: 72px;
 }
 
-/* line 51, src/sass/components/_header.scss */
+/* line 55, src/sass/components/_header.scss */
 .nav__logo svg path {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 
-/* line 57, src/sass/components/_header.scss */
+/* line 61, src/sass/components/_header.scss */
 .nav__logo:hover .path {
   stroke: #13846D;
 }
 
-/* line 63, src/sass/components/_header.scss */
+/* line 67, src/sass/components/_header.scss */
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1878,13 +1885,13 @@ nav {
 }
 
 @media (max-width: 767.98px) {
-  /* line 63, src/sass/components/_header.scss */
+  /* line 67, src/sass/components/_header.scss */
   .nav__list {
     margin-top: 12px;
   }
 }
 
-/* line 71, src/sass/components/_header.scss */
+/* line 75, src/sass/components/_header.scss */
 .nav__list li {
   font-family: 'Montserrat';
   font-size: 12px;
@@ -1892,33 +1899,42 @@ nav {
 }
 
 @media (min-width: 992px) {
-  /* line 71, src/sass/components/_header.scss */
+  /* line 75, src/sass/components/_header.scss */
   .nav__list li {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
 
-/* line 79, src/sass/components/_header.scss */
+/* line 83, src/sass/components/_header.scss */
 .nav__list li a {
   padding: 10px;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
-  /* line 79, src/sass/components/_header.scss */
+  /* line 83, src/sass/components/_header.scss */
   .nav__list li a {
     padding: 10px 15px;
   }
 }
 
-/* line 88, src/sass/components/_header.scss */
+/* line 93, src/sass/components/_header.scss */
 .nav__list li.is-active a {
   background-color: #13846D;
   border-radius: 3px;
 }
 
-/* line 97, src/sass/components/_header.scss */
+@media (max-width: 767.98px) {
+  /* line 93, src/sass/components/_header.scss */
+  .nav__list li.is-active a {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+/* line 106, src/sass/components/_header.scss */
 .path {
   stroke-dasharray: 175;
   stroke-dashoffset: 175;
@@ -1946,12 +1962,12 @@ nav {
   }
 }
 
-/* line 113, src/sass/components/_header.scss */
+/* line 122, src/sass/components/_header.scss */
 .info-panel {
   text-align: center;
 }
 
-/* line 117, src/sass/components/_header.scss */
+/* line 126, src/sass/components/_header.scss */
 .logo-personal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1973,19 +1989,19 @@ nav {
   background-color: #fff;
 }
 
-/* line 128, src/sass/components/_header.scss */
+/* line 137, src/sass/components/_header.scss */
 .logo-personal span {
   font-family: 'Montserrat';
   font-size: 52px;
   color: #13846D;
 }
 
-/* line 134, src/sass/components/_header.scss */
+/* line 143, src/sass/components/_header.scss */
 .logo-personal + .bio {
   margin-top: 24px;
 }
 
-/* line 140, src/sass/components/_header.scss */
+/* line 149, src/sass/components/_header.scss */
 .bio__name {
   color: #fff;
   text-transform: uppercase;
@@ -1996,14 +2012,14 @@ nav {
 }
 
 @media (min-width: 992px) {
-  /* line 140, src/sass/components/_header.scss */
+  /* line 149, src/sass/components/_header.scss */
   .bio__name {
     font-size: 72px;
     font-size: 4.5rem;
   }
 }
 
-/* line 152, src/sass/components/_header.scss */
+/* line 161, src/sass/components/_header.scss */
 .bio__title {
   color: #fff;
   font-size: 18px;
@@ -2011,14 +2027,14 @@ nav {
 }
 
 @media (min-width: 992px) {
-  /* line 152, src/sass/components/_header.scss */
+  /* line 161, src/sass/components/_header.scss */
   .bio__title {
     font-size: 24px;
     font-size: 1.5rem;
   }
 }
 
-/* line 162, src/sass/components/_header.scss */
+/* line 171, src/sass/components/_header.scss */
 .star {
   border: none;
   position: relative;
@@ -2028,13 +2044,13 @@ nav {
 }
 
 @media (min-width: 768px) {
-  /* line 162, src/sass/components/_header.scss */
+  /* line 171, src/sass/components/_header.scss */
   .star {
     max-width: 22vw;
   }
 }
 
-/* line 173, src/sass/components/_header.scss */
+/* line 182, src/sass/components/_header.scss */
 .star::before {
   content: '';
   position: absolute;
@@ -2043,7 +2059,7 @@ nav {
   height: 5px;
 }
 
-/* line 181, src/sass/components/_header.scss */
+/* line 190, src/sass/components/_header.scss */
 .star::after {
   content: '\2605';
   position: absolute;
@@ -2056,40 +2072,40 @@ nav {
   font-size: 2.25rem;
 }
 
-/* line 193, src/sass/components/_header.scss */
+/* line 202, src/sass/components/_header.scss */
 .star--light::before {
   background-color: #fff;
 }
 
-/* line 197, src/sass/components/_header.scss */
+/* line 206, src/sass/components/_header.scss */
 .star--light::after {
   color: #fff;
   background-color: #13846D;
 }
 
-/* line 205, src/sass/components/_header.scss */
+/* line 214, src/sass/components/_header.scss */
 .star--dark::before {
   background-color: #2c3e50;
 }
 
-/* line 209, src/sass/components/_header.scss */
+/* line 218, src/sass/components/_header.scss */
 .star--dark::after {
   color: #2c3e50;
   background-color: #fff;
 }
 
-/* line 216, src/sass/components/_header.scss */
+/* line 225, src/sass/components/_header.scss */
 .bio-section {
   background-color: #13846D;
 }
 
-/* line 220, src/sass/components/_header.scss */
+/* line 229, src/sass/components/_header.scss */
 .footer {
   padding: 24px 0;
   background-color: #233140;
 }
 
-/* line 224, src/sass/components/_header.scss */
+/* line 233, src/sass/components/_header.scss */
 .footer * {
   color: #fff;
 }
