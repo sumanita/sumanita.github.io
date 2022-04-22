@@ -1887,7 +1887,7 @@ nav {
 @media (max-width: 767.98px) {
   /* line 67, src/sass/components/_header.scss */
   .nav__list {
-    margin-top: 12px;
+    margin-top: 24px;
   }
 }
 
