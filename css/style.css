@@ -1794,6 +1794,16 @@ nav {
   /* line 13, src/sass/components/_header.scss */
   .nav {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1812,18 +1822,18 @@ nav {
   }
 }
 
-/* line 25, src/sass/components/_header.scss */
+/* line 28, src/sass/components/_header.scss */
 .nav a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 28, src/sass/components/_header.scss */
+/* line 31, src/sass/components/_header.scss */
 .nav a:hover, .nav a:focus {
   text-decoration: underline;
 }
 
-/* line 34, src/sass/components/_header.scss */
+/* line 37, src/sass/components/_header.scss */
 .nav__logo {
   background-color: #fff;
   border-radius: 50%;
@@ -1840,24 +1850,24 @@ nav {
           justify-content: center;
 }
 
-/* line 44, src/sass/components/_header.scss */
+/* line 47, src/sass/components/_header.scss */
 .nav__logo svg {
   width: 58px;
   height: 72px;
 }
 
-/* line 48, src/sass/components/_header.scss */
+/* line 51, src/sass/components/_header.scss */
 .nav__logo svg path {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 
-/* line 54, src/sass/components/_header.scss */
+/* line 57, src/sass/components/_header.scss */
 .nav__logo:hover .path {
   stroke: #13846D;
 }
 
-/* line 60, src/sass/components/_header.scss */
+/* line 63, src/sass/components/_header.scss */
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1868,13 +1878,13 @@ nav {
 }
 
 @media (max-width: 767.98px) {
-  /* line 60, src/sass/components/_header.scss */
+  /* line 63, src/sass/components/_header.scss */
   .nav__list {
     margin-top: 12px;
   }
 }
 
-/* line 68, src/sass/components/_header.scss */
+/* line 71, src/sass/components/_header.scss */
 .nav__list li {
   font-family: 'Montserrat';
   font-size: 12px;
@@ -1882,33 +1892,33 @@ nav {
 }
 
 @media (min-width: 992px) {
-  /* line 68, src/sass/components/_header.scss */
+  /* line 71, src/sass/components/_header.scss */
   .nav__list li {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
 
-/* line 76, src/sass/components/_header.scss */
+/* line 79, src/sass/components/_header.scss */
 .nav__list li a {
   padding: 10px;
   text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
-  /* line 76, src/sass/components/_header.scss */
+  /* line 79, src/sass/components/_header.scss */
   .nav__list li a {
     padding: 10px 15px;
   }
 }
 
-/* line 85, src/sass/components/_header.scss */
+/* line 88, src/sass/components/_header.scss */
 .nav__list li.is-active a {
   background-color: #13846D;
   border-radius: 3px;
 }
 
-/* line 94, src/sass/components/_header.scss */
+/* line 97, src/sass/components/_header.scss */
 .path {
   stroke-dasharray: 175;
   stroke-dashoffset: 175;
@@ -1936,12 +1946,12 @@ nav {
   }
 }
 
-/* line 110, src/sass/components/_header.scss */
+/* line 113, src/sass/components/_header.scss */
 .info-panel {
   text-align: center;
 }
 
-/* line 114, src/sass/components/_header.scss */
+/* line 117, src/sass/components/_header.scss */
 .logo-personal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1963,19 +1973,19 @@ nav {
   background-color: #fff;
 }
 
-/* line 125, src/sass/components/_header.scss */
+/* line 128, src/sass/components/_header.scss */
 .logo-personal span {
   font-family: 'Montserrat';
   font-size: 52px;
   color: #13846D;
 }
 
-/* line 131, src/sass/components/_header.scss */
+/* line 134, src/sass/components/_header.scss */
 .logo-personal + .bio {
   margin-top: 24px;
 }
 
-/* line 137, src/sass/components/_header.scss */
+/* line 140, src/sass/components/_header.scss */
 .bio__name {
   color: #fff;
   text-transform: uppercase;
@@ -1986,14 +1996,14 @@ nav {
 }
 
 @media (min-width: 992px) {
-  /* line 137, src/sass/components/_header.scss */
+  /* line 140, src/sass/components/_header.scss */
   .bio__name {
     font-size: 72px;
     font-size: 4.5rem;
   }
 }
 
-/* line 149, src/sass/components/_header.scss */
+/* line 152, src/sass/components/_header.scss */
 .bio__title {
   color: #fff;
   font-size: 18px;
@@ -2001,14 +2011,14 @@ nav {
 }
 
 @media (min-width: 992px) {
-  /* line 149, src/sass/components/_header.scss */
+  /* line 152, src/sass/components/_header.scss */
   .bio__title {
     font-size: 24px;
     font-size: 1.5rem;
   }
 }
 
-/* line 159, src/sass/components/_header.scss */
+/* line 162, src/sass/components/_header.scss */
 .star {
   border: none;
   position: relative;
@@ -2018,13 +2028,13 @@ nav {
 }
 
 @media (min-width: 768px) {
-  /* line 159, src/sass/components/_header.scss */
+  /* line 162, src/sass/components/_header.scss */
   .star {
     max-width: 22vw;
   }
 }
 
-/* line 170, src/sass/components/_header.scss */
+/* line 173, src/sass/components/_header.scss */
 .star::before {
   content: '';
   position: absolute;
@@ -2033,7 +2043,7 @@ nav {
   height: 5px;
 }
 
-/* line 178, src/sass/components/_header.scss */
+/* line 181, src/sass/components/_header.scss */
 .star::after {
   content: '\2605';
   position: absolute;
@@ -2046,40 +2056,40 @@ nav {
   font-size: 2.25rem;
 }
 
-/* line 190, src/sass/components/_header.scss */
+/* line 193, src/sass/components/_header.scss */
 .star--light::before {
   background-color: #fff;
 }
 
-/* line 194, src/sass/components/_header.scss */
+/* line 197, src/sass/components/_header.scss */
 .star--light::after {
   color: #fff;
   background-color: #13846D;
 }
 
-/* line 202, src/sass/components/_header.scss */
+/* line 205, src/sass/components/_header.scss */
 .star--dark::before {
   background-color: #2c3e50;
 }
 
-/* line 206, src/sass/components/_header.scss */
+/* line 209, src/sass/components/_header.scss */
 .star--dark::after {
   color: #2c3e50;
   background-color: #fff;
 }
 
-/* line 213, src/sass/components/_header.scss */
+/* line 216, src/sass/components/_header.scss */
 .bio-section {
   background-color: #13846D;
 }
 
-/* line 217, src/sass/components/_header.scss */
+/* line 220, src/sass/components/_header.scss */
 .footer {
   padding: 24px 0;
   background-color: #233140;
 }
 
-/* line 221, src/sass/components/_header.scss */
+/* line 224, src/sass/components/_header.scss */
 .footer * {
   color: #fff;
 }
